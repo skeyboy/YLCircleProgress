@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+	一款swift的进度展示,期待后续完善
                    DESC
 
   s.homepage     = "https://github.com/skeyboy/YLCircleProgress"
@@ -67,7 +68,7 @@ Pod::Spec.new do |s|
    s.platform     = :ios, "8.3"
 
   #  When using multiple platforms
-   s.ios.deployment_target = "5.0"
+  # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -90,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "/YLCircleProgressDemo/CircleProgress/Code/*.swift"
+  s.source_files  = "YLCircleProgressDemo/CircleProgress/Code/*.swift"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -105,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
    #s.resource  = "/YLCircleProgressDemo/CircleProgress/Code/"
-   s.resources = "/YLCircleProgressDemo/CircleProgress/Resource/*.png"
+   s.resources = "YLCircleProgressDemo/CircleProgress/Resource/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

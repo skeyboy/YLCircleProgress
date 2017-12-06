@@ -14,6 +14,18 @@
 		BF2049C71FD6856E006F1026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2049C51FD6856E006F1026 /* LaunchScreen.storyboard */; };
 		BF2049D21FD6856E006F1026 /* YLCircleProgressDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2049D11FD6856E006F1026 /* YLCircleProgressDemoTests.swift */; };
 		BF2049DD1FD6856E006F1026 /* YLCircleProgressDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2049DC1FD6856E006F1026 /* YLCircleProgressDemoUITests.swift */; };
+		BFE0192F1FD7F09F003050D3 /* YLCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192A1FD7F09F003050D3 /* YLCircleProgress.swift */; };
+		BFE019301FD7F09F003050D3 /* YLCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192A1FD7F09F003050D3 /* YLCircleProgress.swift */; };
+		BFE019311FD7F09F003050D3 /* YLCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192A1FD7F09F003050D3 /* YLCircleProgress.swift */; };
+		BFE019321FD7F09F003050D3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192B1FD7F09F003050D3 /* Utils.swift */; };
+		BFE019331FD7F09F003050D3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192B1FD7F09F003050D3 /* Utils.swift */; };
+		BFE019341FD7F09F003050D3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192B1FD7F09F003050D3 /* Utils.swift */; };
+		BFE019351FD7F09F003050D3 /* YLCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192C1FD7F09F003050D3 /* YLCircle.swift */; };
+		BFE019361FD7F09F003050D3 /* YLCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192C1FD7F09F003050D3 /* YLCircle.swift */; };
+		BFE019371FD7F09F003050D3 /* YLCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0192C1FD7F09F003050D3 /* YLCircle.swift */; };
+		BFE019381FD7F09F003050D3 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE0192E1FD7F09F003050D3 /* endPoint.png */; };
+		BFE019391FD7F09F003050D3 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE0192E1FD7F09F003050D3 /* endPoint.png */; };
+		BFE0193A1FD7F09F003050D3 /* endPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE0192E1FD7F09F003050D3 /* endPoint.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,10 @@
 		BF2049D81FD6856E006F1026 /* YLCircleProgressDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLCircleProgressDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2049DC1FD6856E006F1026 /* YLCircleProgressDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLCircleProgressDemoUITests.swift; sourceTree = "<group>"; };
 		BF2049DE1FD6856E006F1026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE0192A1FD7F09F003050D3 /* YLCircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLCircleProgress.swift; sourceTree = "<group>"; };
+		BFE0192B1FD7F09F003050D3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BFE0192C1FD7F09F003050D3 /* YLCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLCircle.swift; sourceTree = "<group>"; };
+		BFE0192E1FD7F09F003050D3 /* endPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endPoint.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 		BF2049BB1FD6856E006F1026 /* YLCircleProgressDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFE019281FD7F09F003050D3 /* CircleProgress */,
 				BF2049BC1FD6856E006F1026 /* AppDelegate.swift */,
 				BF2049BE1FD6856E006F1026 /* ViewController.swift */,
 				BF2049C01FD6856E006F1026 /* Main.storyboard */,
@@ -123,6 +140,33 @@
 				BF2049DE1FD6856E006F1026 /* Info.plist */,
 			);
 			path = YLCircleProgressDemoUITests;
+			sourceTree = "<group>";
+		};
+		BFE019281FD7F09F003050D3 /* CircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				BFE019291FD7F09F003050D3 /* Code */,
+				BFE0192D1FD7F09F003050D3 /* Resource */,
+			);
+			path = CircleProgress;
+			sourceTree = "<group>";
+		};
+		BFE019291FD7F09F003050D3 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0192A1FD7F09F003050D3 /* YLCircleProgress.swift */,
+				BFE0192B1FD7F09F003050D3 /* Utils.swift */,
+				BFE0192C1FD7F09F003050D3 /* YLCircle.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		BFE0192D1FD7F09F003050D3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0192E1FD7F09F003050D3 /* endPoint.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +237,7 @@
 				TargetAttributes = {
 					BF2049B81FD6856E006F1026 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					BF2049CC1FD6856E006F1026 = {
 						CreatedOnToolsVersion = 9.2;
@@ -232,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE019381FD7F09F003050D3 /* endPoint.png in Resources */,
 				BF2049C71FD6856E006F1026 /* LaunchScreen.storyboard in Resources */,
 				BF2049C41FD6856E006F1026 /* Assets.xcassets in Resources */,
 				BF2049C21FD6856E006F1026 /* Main.storyboard in Resources */,
@@ -242,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE019391FD7F09F003050D3 /* endPoint.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE0193A1FD7F09F003050D3 /* endPoint.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +308,9 @@
 			files = (
 				BF2049BF1FD6856E006F1026 /* ViewController.swift in Sources */,
 				BF2049BD1FD6856E006F1026 /* AppDelegate.swift in Sources */,
+				BFE0192F1FD7F09F003050D3 /* YLCircleProgress.swift in Sources */,
+				BFE019351FD7F09F003050D3 /* YLCircle.swift in Sources */,
+				BFE019321FD7F09F003050D3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE019361FD7F09F003050D3 /* YLCircle.swift in Sources */,
 				BF2049D21FD6856E006F1026 /* YLCircleProgressDemoTests.swift in Sources */,
+				BFE019301FD7F09F003050D3 /* YLCircleProgress.swift in Sources */,
+				BFE019331FD7F09F003050D3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE019371FD7F09F003050D3 /* YLCircle.swift in Sources */,
 				BF2049DD1FD6856E006F1026 /* YLCircleProgressDemoUITests.swift in Sources */,
+				BFE019311FD7F09F003050D3 /* YLCircleProgress.swift in Sources */,
+				BFE019341FD7F09F003050D3 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +482,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8R29X3H9MY;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YLCircleProgressDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QK.YLCircleProgressDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +499,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8R29X3H9MY;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YLCircleProgressDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = QK.YLCircleProgressDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

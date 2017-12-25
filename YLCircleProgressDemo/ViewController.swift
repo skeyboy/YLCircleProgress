@@ -25,6 +25,9 @@ class ViewController: UIViewController {
 
         circle = YLCircleProgress(frame: rect)
         circle?.progress = 0.01
+        circle?.circle?.circleEndColor = UIColor.red
+        circle?.circle?.circleGradientColors = [UIColor.blue, UIColor.white, UIColor.magenta]
+        
         self.view.addSubview(circle!)
     }
 

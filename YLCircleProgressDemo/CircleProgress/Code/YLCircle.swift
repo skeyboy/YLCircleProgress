@@ -11,6 +11,7 @@ import UIKit
 let endPointMargin = 1.0
 
 class YLCircle: UIView {
+    
     var  progress:Float?{
         didSet{
             self.progressLayer.strokeEnd = self.progress!.cgFloat
@@ -18,6 +19,27 @@ class YLCircle: UIView {
             self.progressLayer.removeAllAnimations()
         }
     }
+    
+    private var innerCircleEndColor:UIColor = UIColor.brown
+    private var innerCircleStartColors:[UIColor] = [RGB(r: 255, g: 151, b: 0, alpha: 1.0).color,
+                                                    RGB(r: 255, g: 203, b: 0, alpha: 1.0).color
+    ]
+    
+    /// 剩余路径的颜色
+    var circleEndColor:UIColor?{
+        willSet{
+            innerCircleEndColor = newValue!
+        }
+    }
+    
+    /// 划过的圆的边的渐变色
+    var circleGradientColors:[UIColor]?{
+        willSet{
+            innerCircleStartColors = newValue as! [UIColor]
+        }
+    }
+    
+   
     
     var lineWidth: Float
   
@@ -79,7 +101,7 @@ class YLCircle: UIView {
         let backLayer: CAShapeLayer = CAShapeLayer()
         backLayer.frame = self.bounds
         backLayer.fillColor = UIColor.clear.cgColor
-        backLayer.strokeColor = UIColor.brown.cgColor
+        backLayer.strokeColor = innerCircleEndColor.cgColor
         backLayer.lineWidth = CGFloat(self.lineWidth)
         backLayer.path = path.cgPath
         backLayer.strokeEnd = 1
@@ -93,6 +115,10 @@ class YLCircle: UIView {
         gradientLayer.colors = [RGB(r: 255, g: 151, b: 0, alpha: 1.0).color.cgColor,
         RGB(r: 255, g: 203, b: 0, alpha: 1.0).color.cgColor
         ]
+        
+        gradientLayer.colors = self.innerCircleStartColors.map({ (color) -> CGColor in
+            return color.cgColor
+        })
         gradientLayer.startPoint = CGPoint(x: 0, y: 0   )
         gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         gradientLayer.mask = self.progressLayer

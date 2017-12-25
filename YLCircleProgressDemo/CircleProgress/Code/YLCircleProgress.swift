@@ -18,7 +18,7 @@ class YLCircleProgress: UIView {
     var circle: YLCircle?
     var percentLabel: UILabel?
 
-    func buildUI() -> Void {
+  private  func buildUI() -> Void {
 
         let lineWidth = 0.1 * self.bounds.size.width
         if self.percentLabel == nil {
